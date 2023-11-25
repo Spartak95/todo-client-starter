@@ -12,4 +12,5 @@ import org.springframework.context.annotation.Import;
 @Target(ElementType.TYPE)
 @Import(ToDoSecurityConfiguration.class)
 public @interface EnableToDoSecurity {
+    Algorithm algorithm() default Algorithm.BCRYPT;
 }
